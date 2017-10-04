@@ -19,6 +19,7 @@ class Publishers extends Migration
             $table->string('email')->unique();
             $table->string('phone')->nullable();
             $table->string('url')->nullable();
+            $table->string('plan')->nullable();
             $table->string('upload')->nullable();
             $table->string('bankname')->nullable();
             $table->string('accountname')->nullable();

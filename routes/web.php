@@ -12,8 +12,25 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('general.index');
 });
+
+Route::get('/about', function () {
+    return view('general.about');
+});
+
+Route::get('/howitworks', function () {
+    return view('general.howitworks');
+});
+
+Route::get('/marketplace', function () {
+    return view('general.marketplace');
+});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
