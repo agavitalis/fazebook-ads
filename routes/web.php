@@ -30,10 +30,20 @@ Route::get('/marketplace', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/pub', 'PublisherController@index')->name('publisherhome');
+
+Route::get('/plan', 'PublisherController@plans')->name('publisherplan');
+
+Route::get('/postadd', 'PublisherController@postadd')->name('publisherpostadd');
+
+Route::get('/profile', 'PublisherController@profile')->name('publisherprofile');
+
+Route::get('/referal', 'PublisherController@referal')->name('publisherreferal');
+
+Route::get('/cashout', 'PublisherController@cashout')->name('publishercashout');
 
 
-Route::get('/homee', 'PublisherController@index')->name('home');
 
 // //lets take care of the publisher
 // Route::get('/publisher', 'PublisherController@index')->name('publisherhome');
