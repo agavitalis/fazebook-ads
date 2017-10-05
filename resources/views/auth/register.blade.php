@@ -1,6 +1,7 @@
 @extends('layouts.general.master')
 
 @section('content')
+<link href="{{ asset('css/register.css')}}" rel="stylesheet" type="text/css" media="all"/>
 <!-- main --> 
 	<div class="main-agileinfo slider ">
 		<div class="items-group">
@@ -54,7 +55,7 @@
                                     <label><input type="radio" value="pp" required="" name="usertype">I am a publisher</label>
                                     </div>
                                     <div class="radio">
-                                    <label><input type="radio" value="aa" required="" name="usertype">I am an advertuzer</label>
+                                    <label><input type="radio" value="aa" required="" name="usertype">I am an advertizer</label>
                                     </div>
                                     <hr>
                                     <input type="submit" value="Register" name="register"> 

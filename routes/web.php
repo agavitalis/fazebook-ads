@@ -32,6 +32,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/homee', 'PublisherController@index')->name('home');
+
+// //lets take care of the publisher
+// Route::get('/publisher', 'PublisherController@index')->name('publisherhome');
+
+// Route::get('/publisher', function () {
+//     return view('publisher.index');
+// });

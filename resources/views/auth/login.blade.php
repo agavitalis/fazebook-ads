@@ -1,5 +1,6 @@
 @extends('layouts.general.master')
 @section("content")
+<link href="{{ asset('css/login.css')}}" rel="stylesheet" type="text/css" media="all"/>
 
 <div class="main-agileinfo slider ">
     <div class="items-group">

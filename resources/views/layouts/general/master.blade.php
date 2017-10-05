@@ -10,8 +10,7 @@
 <link href="{{ asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all"/>
 <link href="{{ asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" media="all" />
 
-<link href="{{ asset('css/login.css')}}" rel="stylesheet" type="text/css" media="all"/>
-<link href="{{ asset('css/register.css')}}" rel="stylesheet" type="text/css" media="all"/>
+
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
