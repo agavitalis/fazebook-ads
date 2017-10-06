@@ -48,7 +48,7 @@
                          
                     <div class="form-group">
                     <label for="exampleInputFile">Profile Picture</label>
-                        <input type="file"  class="form-control"id="exampleInputFile" name="image" >
+                        <input type="file"  class="form-control" id="exampleInputFile" name="image" >
                     </div>
                       <input type="submit" value="Update Profile"> 
                   </form>

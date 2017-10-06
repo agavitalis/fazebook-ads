@@ -12,7 +12,7 @@
                   <div class="alert alert-info">
                       Please confirm his details to cash out
                   </div>
-                  <form class="com-mail">  
+                  <form method="post" action="/cashout" class="com-mail">  
                        {{csrf_field()}}
                       <input type="text" name="bankname" value="{{$publisher->bankname}}" placeholder="Bank Name :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Bank Name';}">
                       <input type="text" name="accountname" value="{{$publisher->accountname}}" placeholder="Account Name :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Account Name';}">

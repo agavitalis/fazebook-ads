@@ -101,8 +101,18 @@ class PublisherController extends Controller
                     }   
             
             
-    public function cashout(){
+    public function cashout(Request $request,$id=null){
+        
+             $email=Auth::user()->email;
+
+            if($request->isMethod('GET'))
+            {
                 $publisher=DB::table('publishers')->where('email',Auth::user()->email)->first();
                 return view('publisher.cashout',compact('publisher'));
             } 
+}
+
+
+
+
 }

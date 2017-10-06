@@ -14,11 +14,13 @@ class Cashout extends Migration
     public function up()
     {
          Schema::create('cashouts', function (Blueprint $table) {  
-            $table->increments('id');
+            $table->increments('id')->unique();;
             $table->string('name');
-            $table->string('email')->unique();
-            $table->string('amount')->nullable();
-            $table->string('phone')->nullable();
+            $table->string('email');
+            $table->string('amount');
+            $table->string('bankname');
+            $table->string('accountname');
+            $table->string('accountno');
             $table->string('paid')->nullable();
             $table->timestamps();
 
