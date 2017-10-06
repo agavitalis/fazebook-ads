@@ -22,9 +22,7 @@
 <script src="{{asset('publisher/js/Chart.min.js')}}"></script>
 <!--//charts-->
 <!-- geo chart -->
-    <script src="//cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-    <script>window.modernizr || document.write('<script src="lib/modernizr/modernizr-custom.js')}}"><\/script>')</script>
-    <!--<script src="lib/html5shiv/html5shiv.js"></script>-->
+    
      <!-- Chartinator  -->
     <script src="{{asset('publisher/js/chartinator.js')}}" ></script>
     <script type="text/javascript">
@@ -119,38 +117,19 @@
 										<ul class="dropdown-menu">
 											<li>
 												<div class="notification_header">
-													<h3>You have 3 new messages</h3>
+													<h3>You have No new messages</h3>
 												</div>
 											</li>
+											
 											<li><a href="#">
-											   <div class="user_img"><img src="images/p4.png" alt=""></div>
+											
 											   <div class="notification_desc">
 												<p>Lorem ipsum dolor</p>
 												<p><span>1 hour ago</span></p>
 												</div>
 											   <div class="clearfix"></div>	
 											</a></li>
-											<li class="odd"><a href="#">
-												<div class="user_img"><img src="images/p2.png" alt=""></div>
-											   <div class="notification_desc">
-												<p>Lorem ipsum dolor </p>
-												<p><span>1 hour ago</span></p>
-												</div>
-											  <div class="clearfix"></div>	
-											</a></li>
-											<li><a href="#">
-											   <div class="user_img"><img src="images/p3.png" alt=""></div>
-											   <div class="notification_desc">
-												<p>Lorem ipsum dolor</p>
-												<p><span>1 hour ago</span></p>
-												</div>
-											   <div class="clearfix"></div>	
-											</a></li>
-											<li>
-												<div class="notification_bottom">
-													<a href="#">See all messages</a>
-												</div> 
-											</li>
+											
 										</ul>
 									</li>
 								</ul>
@@ -162,10 +141,10 @@
 									<li class="dropdown profile_details_drop">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 											<div class="profile_img">	
-												<span class="prfil-img"><img src="images/p1.png" alt=""> </span> 
+												<span class="profil-img"><img  src="{{$publisher->profilepics}}" height="40px" width="40px" alt=""> </span> 
 												<div class="user-name">
-													<p>Malorum</p>
-													<span>Administrator</span>
+													<p>"{{$publisher->name}}"</p>
+													<span>Online</span>
 												</div>
 												<i class="fa fa-angle-down lnr"></i>
 												<i class="fa fa-angle-up lnr"></i>
@@ -205,6 +184,14 @@
 @yield('content')
 </div>
 <!--inner block end here-->
+<link rel="stylesheet" type="text/css" href="{{asset('publisher/css/magnific-popup.css')}}">
+			<script type="text/javascript" src="{{asset('publisher/js/nivo-lightbox.min.js')}}"></script>
+				<script type="text/javascript">
+				$(document).ready(function(){
+				    $('#nivo-lightbox-demo a').nivoLightbox({ effect: 'fade' });
+				});
+				</script>
+
 <!--copy rights start here-->
 <div class="copyrights">
 	 <p>© 2017 FacbookAD. All Rights Reserved | Design by  <a href="#" target="_blank">Vivvaa</a> </p>
@@ -222,7 +209,7 @@
 				<li id="menu-home" ><a href="/pub"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
 				<li id="menu-home" ><a href="/plan"><i class="fa fa-ok"></i><span>Choose a plan</span></a></li>
 				<li id="menu-home" ><a href="/postadd"><i class="fa fa-upload"></i><span>Post my ADs</span></a></li>
-				<li id="menu-home" ><a href="/postadd"><i class="fa fa-hand"></i><span>Cashout</span></a></li>
+				<li id="menu-home" ><a href="/cashout"><i class="fa fa-money"></i><span>Cashout</span></a></li>
 				<li id="menu-home" ><a href="/profile"><i class="fa fa-user"></i><span>Profile</span></a></li>
 				<li id="menu-home" ><a href="/referal"><i class="fa fa-tachometer"></i><span>Referal Links</span></a></li>	        
 		      </ul>

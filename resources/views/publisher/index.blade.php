@@ -5,7 +5,7 @@
 			<div class="col-md-4 market-update-gd">
 				<div class="market-update-block clr-block-1">
 					<div class="col-md-8 market-update-left">
-						<h3>83</h3>
+						<h3>{{$publisher->balance}}</h3>
 						<h4>Account Balance</h4>
 						<p>Your earning so far</p>
 					</div>
@@ -18,7 +18,7 @@
 			<div class="col-md-4 market-update-gd">
 				<div class="market-update-block clr-block-2">
 				 <div class="col-md-8 market-update-left">
-					<h3>135</h3>
+					<h3>{{$publisher->plan}}</h3>
 					<h4>Plan</h4>
 					<p>You current Plan</p>
 				  </div>
@@ -31,7 +31,7 @@
 			<div class="col-md-4 market-update-gd">
 				<div class="market-update-block clr-block-3">
 					<div class="col-md-8 market-update-left">
-						<h3>23</h3>
+						<h3>{{$publisher->referal_balance}}</h3>
 						<h4>Referal Balance</h4>
 						<p>Your Bonuses due to referal</p>
 					</div>
@@ -52,10 +52,10 @@
 					<div class="malorum-top">				
 					</div>
 					<div class="malorm-bottom">
-						<span class="malorum-pro"> </span>
-						<h4>unde omnis iste</h4>
-						<h2>Melorum</h2>
-						<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising.</p>
+						<span class="malorum-pro"><img src="{{$publisher->profilepics}}" height="90px"width="90px" alt="Profile Pics"> </span>
+						<h4>Hello</h4>
+						<h2>{{$publisher->name}}</h2>
+						<p>Welcome to FacebookAd, A good place to be.</p>
 						<ul class="malorum-icons">
 							<li><a href="#"><i class="fa fa-facebook"> </i>
 								<div class="tooltip"><span>Facebook</span></div>

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Models\User;
+use App\Models\Publisher;
+use App\Models\Advertizer;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -49,7 +51,7 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
+            'email' => 'required|string|email|max:255|unique:users|unique:publishers',
             'phone' => 'required|string|max:25',
             'password' => 'required|string|min:6|confirmed',
         ]);
@@ -63,12 +65,37 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        //I created both the pub and advertizer on reg
+
+        if( $data['usertype'] == 'pp')
+         {
+       
+            Publisher::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'phone' => $data['phone'],
+                
+            ]);
+
+        }
+        elseif($data['usertype'] == 'aa')
+        {
+            Advertizer::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'phone' => $data['phone'],
+                
+            ]);
+        }
+
+        $user= User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'phone' => $data['phone'],
             'usertype' => $data['usertype'],
             'password' => bcrypt($data['password']),
         ]);
+
+        return $user;
     }
 }

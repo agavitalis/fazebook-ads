@@ -1083,8 +1083,7 @@ canvas#radar {
     position:relative;
     background: #fff;
 }
-span.malorum-pro {
-    background: url(../images/b3.png)no-repeat;
+span.malorum-pro img{
     width: 95px;
     height: 95px;
     display: inline-block;

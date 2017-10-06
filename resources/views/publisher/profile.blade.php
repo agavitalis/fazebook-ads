@@ -6,23 +6,24 @@
 <div class="col-md-4 compose">   	 	
    <div class="mail-profile">
        <div class="mail-pic">
-           <a href="#"><img src="{{asset('publisher/images/b3.png')}}" alt=""></a>
+           <a href="#"><img src="{{$publisher->profilepics}}" height="90px" width="90px" alt="Upload Profile pics"></a>
        </div>
        <div class="mailer-name"> 			
-               <h5><a href="#">Malorum</a></h5>  	 				
-                <h6><a href="mailto:info@example.com">malorum@gmail.com</a></h6>   
+               <h5><a href="#">{{$publisher->name}}</a></h5>  	 				
+                <h6><a href="mailto:info@example.com">{{$publisher->email}}</a></h6>   
        </div>
        <div class="clearfix"> </div>
    </div>
    <div class="compose-bottom">
        <ul>
-           <li><a class="hilate" href="#"><i class="fa fa-user"> </i>Name</a></li>
-           <li><a href="#"><i class="fa fa-envelope-o"> </i>Email</a></li>
-           <li><a href="#"><i class="fa fa-phone"> </i>Phone</a></li>
-           <li><a href="#"><i class="fa fa-pencil-square-o"> </i>Account No</a></li>
-           <li><a href="#"><i class="fa fa-bank"> </i>Bank Name</a></li>
-           <li><a href="#"><i class="fa fa-user"> </i>Account Name</a></li>
-           <li><a href="#"><i class="fa fa-star-o"> </i>Plan</a></li>
+           <li><a class="hilate" href="#"><i class="fa fa-user">&nbsp </i>Name: {{$publisher->name}}</a></li>
+           <li><a href="#"><i class="fa fa-envelope-o">&nbsp</i>Email: {{$publisher->email}}</a></li>
+           <li><a href="#"><i class="fa fa-phone"> &nbsp</i>Phone: {{$publisher->phone}}</a></li>
+           <li><a href="#"><i class="fa fa-pencil-square-o">&nbsp </i>Account No: {{$publisher->accountno}}</a></li>
+           <li><a href="#"><i class="fa fa-bank"> &nbsp</i>Bank Name: {{$publisher->bankname}}</a></li>
+           <li><a href="#"><i class="fa fa-user">&nbsp </i>Account Name: {{$publisher->accountname}}</a></li>
+           <li><a href="#"><i class="fa fa-star-o">&nbsp </i>Plan: {{$publisher->plan}}</a></li>
+           <li><a href="#"><i class="fa fa-star-o">&nbsp </i>Status: {{$publisher->status}}</a></li>
        </ul>
    </div>
 </div>   	 
@@ -35,20 +36,20 @@
                   <div class="alert alert-info">
                       Please fill details to update your profile
                   </div>
-                  <form class="com-mail">
-                      <input type="text"  value="Name :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'To';}">
-                      <input type="text"  value="Email :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
-                      <input type="text"  value="Phone :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'To';}">
-                      <input type="text"  value="Bank Name :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
-                      <input type="text"  value="Account Name :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'To';}">
-                      <input type="text"  value="Account No :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+                  <form enctype="multipart/form-data" method="post" action="/profile/{{$publisher->id}}" class="com-mail">
+                  {{csrf_field()}}
+                      <input type="text" name="name" value="{{$publisher->name}}" placeholder="Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+                      <input type="text" name="email" disabled="true" value="{{$publisher->email}}" placeholder="Email :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+                      <input type="text" name="phone"  value="{{$publisher->phone}}" placeholder="Phone :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}">
+                      <input type="text" name="bankname" value="{{$publisher->bankname}}" placeholder="Bank Name :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Bank Name';}">
+                      <input type="text" name="accountname" value="{{$publisher->accountname}}" placeholder="Account Name :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Account Name';}">
+                      <input type="text" name="accountno" value="{{$publisher->accountno}}" placeholder="Account No :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Account No';}">
                       
-                         <!-- <div class="form-group">
-                          <div class="btn btn-default btn-file">
-                              <i class="fa fa-paperclip"> </i> Attachment
-                              <input type="file" name="attachment">
-                          </div>
-                      </div> -->
+                         
+                    <div class="form-group">
+                    <label for="exampleInputFile">Profile Picture</label>
+                        <input type="file"  class="form-control"id="exampleInputFile" name="image" >
+                    </div>
                       <input type="submit" value="Update Profile"> 
                   </form>
               </div>

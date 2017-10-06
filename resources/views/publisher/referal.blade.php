@@ -21,60 +21,30 @@
                               </tr>
                           </thead>
                           <tbody>
+                          @foreach($referals as $referal)
                             <tr>
                               <td>1</td>
-                              <td>Face book</td>
-                              <td>Malorum</td>                                 
+                              <td>{{$referal->name}}</td>
+                              <td>{{$referal->email}}</td>                                 
                                                          
-                              <td><span class="label label-danger">in progress</span></td>
-                              <td><span class="badge badge-info">50%</span></td>
+                              <td><span class="label label-danger">{{$referal->status}}</span></td>
+                              <td><span class="badge badge-info">{{$referal->plan}}</span></td>
                           </tr>
-                          <tr>
-                              <td>2</td>
-                              <td>Twitter</td>
-                              <td>Evan</td>                               
-                                                              
-                              <td><span class="label label-success">completed</span></td>
-                              <td><span class="badge badge-success">100%</span></td>
-                          </tr>
-                          <tr>
-                              <td>3</td>
-                              <td>Google</td>
-                              <td>John</td>                                
-                              
-                              <td><span class="label label-warning">in progress</span></td>
-                              <td><span class="badge badge-warning">75%</span></td>
-                          </tr>
-                          <tr>
-                              <td>4</td>
-                              <td>LinkedIn</td>
-                              <td>Danial</td>                                 
-                                                         
-                              <td><span class="label label-info">in progress</span></td>
-                              <td><span class="badge badge-info">65%</span></td>
-                          </tr>
-                          <tr>
-                              <td>5</td>
-                              <td>Tumblr</td>
-                              <td>David</td>                                
-                                                             
-                              <td><span class="label label-warning">in progress</span></td>
-                              <td><span class="badge badge-danger">95%</span></td>
-                          </tr>
-                          <tr>
+                         @endforeach
+                          <!-- <tr>
                               <td>6</td>
                               <td>Tesla</td>
                               <td>Mickey</td>                                  
                                                          
                               <td><span class="label label-info">in progress</span></td>
                               <td><span class="badge badge-success">95%</span></td>
-                          </tr>
+                          </tr> -->
                         </tbody>
                         </table>
                         </div>
 
-                        <div class="chit-chat-heading">
-                            Referal Link:agavitalisogbonna@gmail.com
+                        <div class="">
+                            Referal Link:https://www.facebookad.com?ref={{Auth::user()->email}};
                         </div>
          </div>
   </div>

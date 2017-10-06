@@ -35,9 +35,9 @@ Route::get('/pub', 'PublisherController@index')->name('publisherhome');
 
 Route::get('/plan', 'PublisherController@plans')->name('publisherplan');
 
-Route::get('/postadd', 'PublisherController@postadd')->name('publisherpostadd');
+Route::match(['post','get'],'/postadd', 'PublisherController@postadd')->name('publisherpostadd');
 
-Route::get('/profile', 'PublisherController@profile')->name('publisherprofile');
+Route::match(['post','get'],'/profile/{id?}', 'PublisherController@profile')->name('publisherprofile');
 
 Route::get('/referal', 'PublisherController@referal')->name('publisherreferal');
 
