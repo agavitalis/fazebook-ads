@@ -7,6 +7,7 @@ use Auth;
 use App\Models\User;
 use App\Models\Publisher;
 use App\Models\Advertizer;
+use App\Models\Cashout;
 use Illuminate\Support\Facades\Storage; 
 use Illuminate\Support\Facades\DB;
 
@@ -103,13 +104,41 @@ class PublisherController extends Controller
             
     public function cashout(Request $request,$id=null){
         
-             $email=Auth::user()->email;
+            // $email=Auth::user()->email;
 
             if($request->isMethod('GET'))
             {
                 $publisher=DB::table('publishers')->where('email',Auth::user()->email)->first();
                 return view('publisher.cashout',compact('publisher'));
             } 
+
+            elseif($request->isMethod('POST'))
+            {
+                $publisher=DB::table('publishers')->where('email',Auth::user()->email)->first();
+
+                if($publisher->balance < $request->amount )
+                {
+                    return back()->with('error','You can either withdrew all or lesser.');
+                }
+                else{
+
+                    $cashout = new Cashout();
+                    $cashout->name= Auth::user()->name;
+                    $cashout->email= Auth::user()->email;
+                    $cashout->accountno= $request->accountno;
+                    $cashout->accountname= $request->accountname;
+                    $cashout->bankname= $request->bankname;
+                    $cashout->amount= $request->amount;
+
+                    $cashout->save();
+                    return back()->with('success','Your cashout have been noted, You will be credited within 24hours');
+
+
+
+
+                }
+
+            }
 }
 
 

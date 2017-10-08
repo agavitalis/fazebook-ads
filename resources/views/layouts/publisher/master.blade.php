@@ -181,6 +181,21 @@
 		<!-- /script-for sticky-nav -->
 <!--inner block start here-->
 <div class="inner-block">
+	 <!-- general form elements -->
+	 @if ($message = Session::get('success'))
+          <div class="alert alert-success alert-dismissible" role="alert">
+             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            {{ Session::get('success') }}
+          </div>
+        @endif
+
+        @if ($message = Session::get('error'))
+          <div class="alert alert-danger alert-dismissible" role="alert">
+             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            {{ Session::get('error') }}
+          </div>
+		@endif
+		
 @yield('content')
 </div>
 <!--inner block end here-->

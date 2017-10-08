@@ -17,7 +17,7 @@
                       <input type="text" name="bankname" value="{{$publisher->bankname}}" placeholder="Bank Name :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Bank Name';}">
                       <input type="text" name="accountname" value="{{$publisher->accountname}}" placeholder="Account Name :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Account Name';}">
                       <input type="text" name="accountno" value="{{$publisher->accountno}}" placeholder="Account No :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Account No';}">
-                      <input type="text" name="Amount" value="{{$publisher->balance}}" placeholder="Amount :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Amount';}">
+                      <input type="text" required="" name="amount" value="{{$publisher->balance}}" placeholder="Amount :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Amount';}">
                       <input type="submit" value="Confirm and Cashout"> 
                   </form>
               </div>

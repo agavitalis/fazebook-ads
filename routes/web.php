@@ -41,7 +41,7 @@ Route::match(['post','get'],'/profile/{id?}', 'PublisherController@profile')->na
 
 Route::get('/referal', 'PublisherController@referal')->name('publisherreferal');
 
-Route::get(['post','get'],'/cashout/{id?}', 'PublisherController@cashout')->name('publishercashout');
+Route::match(['post','get'],'/cashout/{id?}', 'PublisherController@cashout')->name('publishercashout');
 
 
 
