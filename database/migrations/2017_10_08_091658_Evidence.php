@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAdPubsTable extends Migration
+class Evidence extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateAdPubsTable extends Migration
      */
     public function up()
     {
-        Schema::create('ad_pubs', function (Blueprint $table) {
+        Schema::create('evidence', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('publisher_id');
-            $table->integer('ad_id');
-            $table->string('adlink');
-            $table->string('screen_shot_link')->nullable();
+            $table->string('publisher_id')->nullable();
+            $table->integer('ad_id')->nullable();
+            $table->string('link')->nullable();//where he posted
+            $table->string('address')->nullable();//where its stored
             $table->boolean('confirmed')->default(false);
             $table->timestamps();
         });
@@ -31,6 +31,6 @@ class CreateAdPubsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ad__pubs');
+        Schema::dropIfExists('evidence');
     }
 }

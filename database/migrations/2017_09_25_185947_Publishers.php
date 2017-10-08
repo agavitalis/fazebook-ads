@@ -20,16 +20,16 @@ class Publishers extends Migration
             $table->string('phone')->nullable();
             $table->string('profilepics')->nullable();
             $table->string('url')->nullable();
-            $table->string('plan')->nullable();
+            $table->string('plan')->default(0);
             $table->string('status')->nullable();
             $table->string('upload')->nullable();
             $table->string('bankname')->nullable();
             $table->string('accountname')->nullable();
             $table->string('accountno')->nullable();
             $table->boolean('confirmed')->nullable();
-            $table->string('balance')->nullable();
+            $table->string('balance')->default(0);
             $table->string('referal')->nullable();
-            $table->string('referal_balance')->nullable();
+            $table->string('referal_balance')->default(0);
             $table->timestamps();
 
         });

@@ -4,9 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Advert extends Model
+class Evidence extends Model
 {
     protected $fillable = [
-        'description', 'address'
+        'publisher_id', 'ad_id','link','address','confirmed'
    ];
 }
+

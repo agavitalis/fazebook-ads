@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\Publisher;
 use App\Models\Advertizer;
 use App\Models\Cashout;
+use App\Models\Evidence;
 use Illuminate\Support\Facades\Storage; 
 use Illuminate\Support\Facades\DB;
 
@@ -26,19 +27,65 @@ class PublisherController extends Controller
     public function plans(){
                  $publisher=DB::table('publishers')->where('email',Auth::user()->email)->first();
                 return view('publisher.plan',compact('publisher'));
-            } 
+    } 
 
     public function postadd(Request $request,$id=null){
 
         if($request->isMethod('GET'))
         {
                 $publisher=DB::table('publishers')->where('email',Auth::user()->email)->first();
-                return view('publisher.postadd',compact('publisher'));
+
+                //get the ads
+                $adverts = DB::select('select * from adverts');
+
+                return view('publisher.postadd',compact('publisher','adverts'));
          }
         
         elseif($request->isMethod('POST'))
         {
+            $this->validate($request,[
+                'advert' =>'bail|required|mimes:jpeg,png',]);
+        
+                $file = $request->advert;
+                $link = $request->link;
+                
+                $name =\Ramsey\Uuid\Uuid::uuid4();
+                $name = $name->toString();
+           
+                if($file->getSize()<2000000){
+                                   
+                    $filelink =$name.'.'.$file->getClientOriginalExtension();
+                    
+                   
+                    if(!DB::table('evidence')->where('publisher_id',Auth::user()->email)->first()){
+                         
+                      $file->move( base_path() . '/public/storage/', $filelink );
+                      $evidence = new evidence();
 
+                      $evidence->publisher_id = Auth::user()->email;
+                      $evidence->address = $filelink;
+                      $evidence->link = $link;
+
+                      $evidence->save();
+                                        
+                        return back()->with('success','Your Evidence is successfully uploaded.');
+        
+                        }
+
+
+                        
+                    else{
+                        return back()->with('You can only upload one file at a time..');
+                        
+                    }
+        
+              }
+                
+              else{
+                return back()->with('error','You must upload a file size less than 1MB ');
+        
+                 }
+            
         }
     }
      
