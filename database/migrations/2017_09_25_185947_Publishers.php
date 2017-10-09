@@ -26,7 +26,7 @@ class Publishers extends Migration
             $table->string('bankname')->nullable();
             $table->string('accountname')->nullable();
             $table->string('accountno')->nullable();
-            $table->boolean('confirmed')->nullable();
+            $table->boolean('confirmed')->default(0);
             $table->string('balance')->default(0);
             $table->string('referal')->nullable();
             $table->string('referal_balance')->default(0);

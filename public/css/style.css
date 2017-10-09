@@ -380,9 +380,6 @@ span.glyphicon.glyphicon-folder-open,span.glyphicon.glyphicon-log-in,span.glyphi
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
-}
-.services-left:hover{
-	 background: rgb(4, 19, 102);
 	 
 }
 .services-left:hover  h4{
@@ -830,7 +827,7 @@ i.goog:hover {
 		font-size: 1.7em;
 	}
 	.services-left {
-		width:16.6%;
+		
 		float:left;
 	}
 	span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-log-in, span.glyphicon.glyphicon-cog, span.glyphicon.glyphicon-user, span.glyphicon.glyphicon-comment, span.glyphicon.glyphicon-globe {
@@ -981,7 +978,7 @@ i.goog:hover {
 		width: 52%;
 	}
 	.services-left {
-		width: 33.3%;
+
 		float: left;
 	}
 	.da-thumbs li {
@@ -1161,7 +1158,7 @@ i.goog:hover {
 		font-size: 1em;
 	}
 	.services-left {
-		width: 50%;
+		
 		float: left;
 	}
 	.da-thumbs li a div span {

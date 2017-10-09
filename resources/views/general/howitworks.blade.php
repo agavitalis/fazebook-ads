@@ -5,85 +5,33 @@
 <div class="banner">
 </div>
 <!--banner end here-->
-
-<!--about-->
-	<div class="about" id="about">
-		<div class="container">
-			<div class="col-md-4 about-left">
-				<div class="ab-top">
-					<h3>100%</h3>
-					<h5>Growth Focused</h5>
-					<p>Lorem ipsum dolor sit amet, conse etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magn aliquam erat volutpat massa dolore.</p>
-					<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
-
-				</div>
-			</div>
-			<div class="col-md-8 about-right">
-				
-				<div class="col-md-6 ab-lft">
-					<h4>ADVERTISERS</h4>
-					<p>Social Media provides an unprecedented outreach for businesses. With Facebook alone boasting over two billion active monthly users, there is no better platform to meet potential customers and clients. Join the numerous advertisers already with us and watch your online presence soar, with the concomitant growth and traction.</p>
-				</div>
-				<div class="col-md-6 ab-lft">
-					<h4>PUBLISHERS</h4>
-					<p>On average, we all use Facebook, with many spending over five hours every day chatting away. How about we pay you just for a twenty-minute work online? Sounds cool, right? All you need to do is promote our clients’ companies. Simply share company ads on your timeline and make money on the go. It doesn’t get any simpler than this.</p>
-				</div>
-				<div class="clearfix"></div>
-				<div class="abt-bottom">
-					
-				
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-<!--about-->
-  <!-- Modal -->
-	<div id="myModal" class="modal fade" role="dialog">
-	  <div class="modal-dialog">
-		<!-- Modal content-->
-		<div class="modal-content">
-		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Pellentesque vehicula</h4>
-		  </div>
-		  <div class="modal-body">
-			<p>In varius sem id aliquet rutrum. Pellentesque ut neque ligula. Fusce dapibus volutpat magna, ac feugiat dolor bibendum et. Integer dignissim gravida nunc, eget hendrerit enim. Quisque dapibus mollis finibus. Curabitur nulla enim, aliquet ac ultricies luctus, lacinia ut felis. Etiam aliquam massa nec lorem pulvinar porttitor. Maecenas in rutrum purus, eget consectetur arcu. Sed id pretium ligula, id hendrerit nunc. Nam ut tincidunt erat, sit amet accumsan risus..</p>
-		  </div>
-		</div>
-	</div>
-  </div>
-  <!--// Modal -->
-
 <!--services-->
 	<div class="services w3agile" id="services">
 		<div class="container">
-			<h3>Services Overview</h3>
-			<div class="col-md-2 services-left">
-				<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
-				<h4>Hardware</h4>
-			</div>
-			<div class="col-md-2 services-left">
-				<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
-				<h4>Networking</h4>
-			</div>
-			<div class="col-md-2 services-left">
-				<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-				<h4>Innovation</h4>
-			</div>
-			<div class="col-md-2 services-left">
-				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-				<h4>Development</h4>
-			</div>
-			<div class="col-md-2 services-left">
-				<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-				<h4>Communication</h4>
-			</div>
-			<div class="col-md-2 services-left">
+			<h3>How it Works</h3>
+			<div class="col-md-12 col-sm-12 services-left">
 				<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-				<h4>Marketing</h4>
+				<h4>Publishers</h4>
+				<p>
+				You register to become a member. This gives you access to your dashboard where you can set up your profile as you want. 
+				As a publisher, you have three ads publishing plans to choose. You can buy the 3k, 5k or 10k plan for one month. Payment is done on the platform with your debit card or through your bank. Just click the make payment and follow the prompt. For any plan you choose, you earn 10% of the amount every day for every successful company advert shared on your timeline. You have one ad to share every weekday. You can withdraw your earnings to your bank account every weekend. Please see our Terms and Conditions.
+				You have to check your dashboard for the adverts to share every morning between 9am and 12noon. You lose the earnings for the day if you fail to share these ads on your timeline within this timeframe. These are company adverts and our clients expect their products to be shared on time.
+				In order to be credited, you must upload proof of shared post by taking a screenshot of the post on your timeline.
+				We organize a publisher fare where lucky winners get subscription fee waiver for the following month. 
+				It is not compulsory to refer anyone but just in case you decide to inform your friends about us, every publisher has a referral link and you get N1000 for every person that registers via your link. When you get ten referrals, you become a super-publisher. Basically, it means you can get up to two ads in a day.
+				We offer 100% money back guarantee for unsatisfied members. A user who asks for refund within three days of registration is paid in full, provided he has not cashed out in the period.
+
+				</p>
 			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-12 col-sm-12 services-left">
+				<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+				<h4>Advertizers</h4>
+				<p>
+				We have made our platform as robust and scalable as possible for our advertisers – companies, bloggers, service providers, product developers to ensure maximum return on their investments. When you register as an advertiser, you choose the number of shares you want and submit your order. Our business support team contacts you and take it from there. When you are satisfied with the share to price ratio, we give you an analytics page and help you track the shares. What are you waiting for? Make your product go viral with a click now.
+				</p>
+			</div>
+			
 			<div class="clearfix"></div>
 		</div>
 	</div>

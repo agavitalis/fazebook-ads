@@ -41,6 +41,9 @@
 							</div>
 							
 						 </div>
+						 @guest
+
+						 @else
 						 <div class="header-right">
 							<div class="profile_details_left"><!--notifications of menu start -->
 								<ul class="nofitications-dropdown">
@@ -92,6 +95,7 @@
 							</div>
 							<div class="clearfix"> </div>				
 						</div>
+						@endguest
 				     <div class="clearfix"> </div>	
 				</div>
 <!--heder end here-->

@@ -1358,9 +1358,10 @@ span.clime-icon {
     display: block;
     margin-bottom: 0.3em;
 }
-.climate-grid2 {
-    background: url(../images/shoppy.jpg)no-repeat bottom;
+.climate-grid2 img{
+    /* background: url(../images/shoppy.jpg)no-repeat bottom; */
     min-height:310px;
+    max-width: 44.6em;
     background-size: cover;
     position:relative;
 }
@@ -1429,9 +1430,10 @@ span.shoppy-rate h4 {
     font-family: 'Carrois Gothic', sans-serif;
 }
 .shoppy h3 {
-    font-size: 1.2em;
+    font-size: 2em;
     color: #68AE00;
     font-family: 'Carrois Gothic', sans-serif;
+    text-align: center;
 }
 .popular-brand {
     box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.15);

@@ -5,7 +5,7 @@
 			<div class="col-md-4 market-update-gd">
 				<div class="market-update-block clr-block-1">
 					<div class="col-md-8 market-update-left">
-						<h3>{{$publisher->balance}}</h3>
+						<h3>N:{{$publisher->balance}}</h3>
 						<h4>Account Balance</h4>
 						<p>Your earning so far</p>
 					</div>
@@ -18,9 +18,23 @@
 			<div class="col-md-4 market-update-gd">
 				<div class="market-update-block clr-block-2">
 				 <div class="col-md-8 market-update-left">
-					<h3>{{$publisher->plan}}</h3>
+					 @if($publisher->plan == 1)
+					<h3>Basic</h3>
 					<h4>Plan</h4>
 					<p>You current Plan</p>
+					@elseif($publisher->plan == 2)
+					<h3>Professional</h3>
+					<h4>Plan</h4>
+					<p>You current Plan</p>
+					@elseif($publisher->plan == 3)
+					<h3>Premium</h3>
+					<h4>Plan</h4>
+					<p>You current Plan</p>
+					@else
+					<h3>Inactive</h3>
+					<h4>Account</h4>
+					<p>Please choose a Plan</p>
+					@endif
 				  </div>
 					<div class="col-md-4 market-update-right">
 						<i class="fa fa-eye"> </i>
@@ -31,9 +45,9 @@
 			<div class="col-md-4 market-update-gd">
 				<div class="market-update-block clr-block-3">
 					<div class="col-md-8 market-update-left">
-						<h3>{{$publisher->referal_balance}}</h3>
+						<h3>N:{{$publisher->referal_balance}}</h3>
 						<h4>Referal Balance</h4>
-						<p>Your Bonuses due to referal</p>
+						<p>Your Bonuses due to referals</p>
 					</div>
 					<div class="col-md-4 market-update-right">
 						<i class="fa fa-envelope-o"> </i>

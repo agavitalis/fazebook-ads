@@ -10,8 +10,8 @@
 	    		   <div class="price-block">
 		    			<div class="price-gd-top pric-clr1">
 		    				<h4>Basic</h4>
-		    				<h3><span class="usa-dollar">N</span>1500<span class="per-month">/mon</span></h3>
-		    				<h5>Receive N3000 worth of ADs</h5>
+		    				<h3><span class="usa-dollar">N</span>3,000<span class="per-month">/mon</span></h3>
+		    				<h5>Receive N6,000 worth of ADs</h5>
 		    			</div>
 		    			<div class="price-gd-bottom">
 		    				<div class="price-list">
@@ -40,7 +40,7 @@
 			    				<ul>
 			    					<li>Cashouts on weekend</li>
 			    					<li>N50 cashout charge</li>
-			    					<li>2 Advert perday</li>
+			    					<li>1 Advert perday</li>
 			    					<li>70 referals Maximum</li>
 			    				</ul>
 		    				</div>
@@ -62,7 +62,7 @@
 			    				<ul>
                                 <li>Cashout on weekends</li>
                                 <li>No cashout charge at month end</li>
-                                <li>5 Advert perday</li>
+                                <li>1 Advert perday</li>
                                 <li>Infinite referals</li>
                                 <li>Free advert request in 50 referals</li>
                                 <li>Publisher bonus in 50 referals</li>

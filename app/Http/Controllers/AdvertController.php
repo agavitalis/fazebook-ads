@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Advert;
 use DB;
+use Auth;
 
 class AdvertController extends Controller
 {
@@ -147,6 +148,9 @@ public function addads()
     
     }
 
+   
     
+}
+     
 
 }

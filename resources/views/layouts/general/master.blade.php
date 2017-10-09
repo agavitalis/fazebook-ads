@@ -62,7 +62,7 @@ Make Money online, Make money from Facebook, Easy ways to make money online, fac
 						<li class="hvr-bounce-to-bottom active"><a href="/">Home</a></li>
 						<li class="hvr-bounce-to-bottom"><a href="/howitworks">How It Works</a></li>
 						<li class="hvr-bounce-to-bottom"><a href="/about">About Us</a></li>
-						<li class="hvr-bounce-to-bottom"><a href="/marketplace">Marketplace</a></li>
+				
 						
                         @guest
                             <li><a href="{{ route('login') }}">Login</a></li>
@@ -99,19 +99,32 @@ Make Money online, Make money from Facebook, Easy ways to make money online, fac
     @yield('content')
 
 	<div class="footer">
-			<div class="container">	
-				<div class="social">
-			<h3>Follow Us</h3>
-			<ul>
-				<li><a href="#"><i class="facebok"> </i></a></li>
-				<li><a href="#"><i class="twiter"> </i></a></li>
-				<li><a href="#"><i class="inst"> </i></a></li>
-				<li><a href="#"><i class="goog"> </i></a></li>
-			</ul>
-		</div>
+		<div class="container">	
+			
+			<div class=" col col-md-6 social">
+				<h3>Follow Us</h3>
+				<ul>
+					<li><a href="#"><i class="facebok"> </i></a></li>
+					<li><a href="#"><i class="twiter"> </i></a></li>
+					<li><a href="#"><i class="inst"> </i></a></li>
+					<li><a href="#"><i class="google+"> </i></a></li>
+				</ul>
+			
+		   </div>
+
+		   <div class="col col-md-6 social">
+				<h3>Links</h3>
+				<ul>
+					<li><a href="/policy">Policy</a></li>
+					<li><a href="/terms">Terms and Condition</a></li>
+				</ul>
+			
+		   </div>
+
+		  	<div>
 				<p>&copy; 2017 FacebookAds . All Rights Reserved | Design by <a href="https://facebookads.com.ng">FacebookAds</a></p>				
 			</div>
-		</div>
+	   </div>
 	</div>
 	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
 <!--contact-->

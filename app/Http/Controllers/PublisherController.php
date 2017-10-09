@@ -190,5 +190,4 @@ class PublisherController extends Controller
 
 
 
-
 }

@@ -23,9 +23,14 @@ Route::get('/howitworks', function () {
     return view('general.howitworks');
 });
 
-Route::get('/marketplace', function () {
-    return view('general.marketplace');
+Route::get('/terms', function () {
+    return view('general.terms');
 });
+
+Route::get('/policy', function () {
+    return view('general.policy');
+});
+
 
 
 Auth::routes();
@@ -51,6 +56,14 @@ Route::match(['post','get'],'/cashout/{id?}', 'PublisherController@cashout')->na
 //deleting adverts
 //managing add is here
 Route::get('/admin', 'AdminController@index')->name('adminindex');
+Route::match(['post','get'],'/transferpayment/{id?}', 'AdminController@transferpayment')->name('transferpayment');
+
+
+
+
+
+
+
 Route::get('/ads/publish', ['as' => 'publishedad','uses' => 'AdvertController@publishedads']);
 Route::post('/ads/publish', ['as' => 'publishad','uses' => 'AdvertController@publishad']);
 Route::post('/ads/unpublish', ['as' => 'unpublishad','uses' => 'AdvertController@unpublishad']);
@@ -58,6 +71,26 @@ Route::post('/ads/delete', ['as' => 'deletead','uses' => 'AdvertController@delet
 
 Route::get('/ads/add', ['as' => 'ads','uses' => 'AdvertController@addads']);
 Route::post('/ads/add', ['as' => 'addads','uses' => 'AdvertController@addads2']);
+
+
+
+
+//this controller does not need authentication, the pulic can access it 
+Route::get('/readmore/{id?}', 'GeneralController@readmore')->name('readmore');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Confirmation Controllers for admin
 Route::get('/confirmads', ['as' => 'confirmads','uses' => 'EvidenceController@confirmads']);
