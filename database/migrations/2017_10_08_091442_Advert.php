@@ -17,6 +17,7 @@ class Advert extends Migration
             $table->increments('id');
             $table->string('description')->nullable();
             $table->string('address');
+            $table->string('website')->nullable();
              $table->string('state')->default(0);
             $table->timestamps();
 

@@ -45,6 +45,7 @@ public function addads()
                 Advert::create([
                 
                 'description' => $description,
+                'website'=>$website,
                 'address'=>$fileName ]);
                                 
                 $params = [
