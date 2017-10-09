@@ -31,6 +31,7 @@ public function addads()
 
         $file = $request->advert;
         $description = $request->description;
+        $website=$request->website;
  	    $name =\Ramsey\Uuid\Uuid::uuid4();
         $name = $name->toString();
    

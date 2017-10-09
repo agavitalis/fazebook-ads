@@ -32,7 +32,7 @@
                {{ csrf_field() }}
 
                     <input type="text" name="description" placeholder="Brief description of ad" />
-                    <input type="text" name"website" placeholder="website url">
+                    <input type="text" name="website" placeholder="website url">
                     <input type="file" name="advert" placeholder="Upload" >
                     <div class="forgot-top-grids">
                         
