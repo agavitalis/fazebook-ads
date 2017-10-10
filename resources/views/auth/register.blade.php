@@ -22,8 +22,7 @@
                                             <strong>{{ $errors->first('name') }}</strong>
                                         </span>
                                     @endif
-									<p>rrrrrrrrr </p>
-                                    <input id="name" type="text" class="form-control" name="name" value="$_GET['ref']" required>
+                                    <input  type="hidden"  name="referal" value="<?php echo $_GET['ref']; ?>">
 									<p>Email </p>
                                     <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 

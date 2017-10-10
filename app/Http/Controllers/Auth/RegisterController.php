@@ -8,6 +8,7 @@ use App\Models\Advertizer;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Cookie;
 
 class RegisterController extends Controller
 {
@@ -63,9 +64,11 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+    protected function create(array $data,$id=null)
     {
         //I created both the pub and advertizer on reg
+       
+        
 
         if( $data['usertype'] == 'pp')
          {
@@ -74,7 +77,7 @@ class RegisterController extends Controller
                 'name' => $data['name'],
                 'email' => $data['email'],
                 'phone' => $data['phone'],
-                
+                'referal'=>$data['referal'],
             ]);
 
         }
@@ -84,6 +87,7 @@ class RegisterController extends Controller
                 'name' => $data['name'],
                 'email' => $data['email'],
                 'phone' => $data['phone'],
+                'referal'=>$data['referal'],
                 
             ]);
         }
