@@ -42,6 +42,7 @@ class AdminController extends Controller
             if($plan == 1)
             {
                 $publisher->plan=1;
+                $publisher->datesubscribed=date("Y-m-d G:i:s");
                 $publisher->update();
                // $adverts = DB::update('update publishers set referal_balance = 150 + ? where email = ?',[$publisher->referal_balance,$publisher->referal]);
                 
@@ -59,6 +60,7 @@ class AdminController extends Controller
            else if($plan == 2)
             {
                 $publisher->plan=2;
+                $publisher->datesubscribed=date("Y-m-d G:i:s");
                 $publisher->update();
 
                 try{
@@ -74,6 +76,7 @@ class AdminController extends Controller
            else if($plan == 3)
             {
                 $publisher->plan=3;
+                $publisher->datesubscribed=date("Y-m-d G:i:s");
                 $publisher->update();
 
                 try{

@@ -21,6 +21,7 @@ class Publishers extends Migration
             $table->string('profilepics')->nullable();
             $table->string('url')->nullable();
             $table->string('plan')->default(0);
+            $table->dateTime('datesubscribed');
             $table->string('status')->nullable();
             $table->string('upload')->nullable();
             $table->string('bankname')->nullable();

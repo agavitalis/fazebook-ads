@@ -5,7 +5,7 @@
     <div class="row">
                  
 @if($adverts)
-                   <div class="inner-block">
+                  
     <div class="product-block">
      @if (session('status'))
                         <div class="alert alert-success">
@@ -41,9 +41,9 @@
         
       <div class="clearfix"> </div>
     </div>
-</div>
+
  @else
- <div class="inner-block">
+
     <div class="product-block">
      @if (session('status'))
                         <div class="alert alert-success">
@@ -58,7 +58,7 @@
         
       <div class="clearfix"> </div>
     </div>
-</div>
+
  @endif               
         
     </div>
