@@ -37,26 +37,7 @@
                          <div class="header-right">
                             <div class="profile_details_left"><!--notifications of menu start -->
                             <ul class="nofitications-dropdown">
-                            <li class="dropdown head-dpdn">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-envelope"></i><span class="badge">3</span></a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <div class="notification_header">
-                                            <h3>You have No new messages</h3>
-                                        </div>
-                                    </li>
-                                    
-                                    <li><a href="#">
-                                    
-                                       <div class="notification_desc">
-                                        <p>No messages yet</p>
-                                        <p><span>1 hour ago</span></p>
-                                        </div>
-                                       <div class="clearfix"></div>	
-                                    </a></li>
-                                    
-                                </ul>
-                            </li>
+                           
                         </ul>
                                 <div class="clearfix"> </div>
                             </div>
@@ -163,11 +144,13 @@
                   
                 
                 
-                 <li><a href="#"><i class="fa fa-cog"></i><span>Payment</span><span class="fa fa-angle-right" style="float: right"></span></a>
+                 <li><a href="#"><i class="fa fa-cog"></i><span>Confirm Evidence</span><span class="fa fa-angle-right" style="float: right"></span></a>
                      <ul id="menu-academico-sub" >
                         <li id="menu-academico-avaliacoes" ><a href=" {{ route('confirmads') }} ">Credit & Confirm</a></li>
                          </ul>
                  </li>
+                 <li id="menu-home" ><a href="/transferpayment"><i class="fa fa-money"></i><span>Activate Pubs</span></a></li>
+             
                  <li><a href="#"><i class="fa fa-shopping-cart"></i><span>Advertisers</span><span class="fa fa-angle-right" style="float: right"></span></a>
                     <ul id="menu-academico-sub" >
                         <li id="menu-academico-avaliacoes" ><a href="#">Product</a></li>

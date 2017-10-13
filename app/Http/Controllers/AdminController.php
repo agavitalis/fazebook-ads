@@ -10,7 +10,11 @@ use App\Models\Publisher;
 
 class AdminController extends Controller
 {
-   
+    public function __construct() {
+        
+        $this->middleware('auth');
+    }
+           
     public function index()
     {
         $adverts = DB::select('select * from adverts');
@@ -39,24 +43,53 @@ class AdminController extends Controller
             {
                 $publisher->plan=1;
                 $publisher->update();
+               // $adverts = DB::update('update publishers set referal_balance = 150 + ? where email = ?',[$publisher->referal_balance,$publisher->referal]);
+                
+
+                try{
+                    //we credit the referal
+                    $adverts = DB::update('update publishers set referal_balance = 150 + ? where email = ?',[$publisher->referal_balance,$publisher->referal]);
+                    
+                }
+               // $adverts = DB::update('update publishers set referal_balance = 150 + ? where email = ?',[$publisher->balance,$publsher->referal]);
+               finally{
                 return back()->with('success','Publisher plan successfull activated.');
+                }
             }
            else if($plan == 2)
             {
                 $publisher->plan=2;
                 $publisher->update();
-                return back()->with('success','Publisher plan successfull activated.');
+
+                try{
+                    //we credit the referal
+                    $adverts = DB::update('update publishers set referal_balance = 250 + ? where email = ?',[$publisher->referal_balance,$publisher->referal]);
+                    
+                }
+                finally{
+                    return back()->with('success','Publisher plan successfull activated.');
+                }
+                
             }
            else if($plan == 3)
             {
                 $publisher->plan=3;
                 $publisher->update();
-                return back()->with('success','Publisher plan successfull activated.');
+
+                try{
+                    //we credit the referal
+                    $adverts = DB::update('update publishers set referal_balance = 500 + ? where email = ?',[$publisher->referal_balance,$publisher->referal]);
+                    
+                }
+
+                finally{
+                    return back()->with('success','Publisher plan successfull activated.');
+                }
             }
             else
             {
                
-                return back()->with('error','Publisher plan successfull activated.');
+                return back()->with('error','Publisher not  activated.');
             }
             
         }
