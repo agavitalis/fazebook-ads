@@ -6,8 +6,12 @@
 <div class="col-md-4 compose">   	 	
    <div class="mail-profile">
        <div class="mail-pic">
-           <a href="#"><img src="{{$publisher->profilepics}}" height="90px" width="90px" alt="Upload Profile pics"></a>
-       </div>
+            @if($publisher->profilepics != null)
+            <a href="#"><img class="img-responsive img-circle" src="{{$publisher->profilepics}}" alt="cover picture" height="90px" width="90px"></a>
+            @else
+            <a href="#"><img class="img-responsive img-circle" src="images/default.png" alt="cover picture" height="90px" width="90px"></a>
+            @endif	
+        </div>
        <div class="mailer-name"> 			
                <h5><a href="#">{{$publisher->name}}</a></h5>  	 				
                 <h6><a href="mailto:info@example.com">{{$publisher->email}}</a></h6>   

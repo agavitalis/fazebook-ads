@@ -17,7 +17,8 @@
 		    				<div class="price-list">
 			    				<ul>
 			    					<li>Cashout on weekends</li>
-			    					<li>N50 cashout charge</li>
+									<li>N50 cashout charge</li>
+									<li>5% Referral Bonus</li>
 			    					<li>1 Advert perday</li>
 			    					<li>20 referals Maximum</li>
 			    				</ul>
@@ -40,7 +41,8 @@
 			    				<ul>
 			    					<li>Cashouts on weekend</li>
 			    					<li>N50 cashout charge</li>
-			    					<li>1 Advert perday</li>
+									<li>1 Advert perday</li>
+									<li>5% Referral Bonus</li>
 			    					<li>70 referals Maximum</li>
 			    				</ul>
 		    				</div>
@@ -62,7 +64,8 @@
 			    				<ul>
                                 <li>Cashout on weekends</li>
                                 <li>No cashout charge at month end</li>
-                                <li>1 Advert perday</li>
+								<li>1 Advert perday</li>
+								<li>5% Referral Bonus</li>
                                 <li>Infinite referals</li>
                                 <li>Free advert request in 50 referals</li>
                                 <li>Publisher bonus in 50 referals</li>
@@ -91,13 +94,13 @@
                                         <li><input class="text-box-dark" disabled="true" type="text" value="Account No: 000000000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
                                     </ul>
                                     <ul>
-                                        <li><input class="text-box-dark"  disabled="true" type="text" value="Account Name: ********" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
+                                        <li><input class="text-box-dark"  disabled="true" type="text" value="Account Name: BOOKADS INTL" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
                                         <li><input class="text-box-dark"  disabled="true" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
                 
                                     </ul>
                                     
                                     <div class="clear"></div>
-                                    <h4 class="paymenthead"><span class="payment"></span>"send payment details to: payment@facebookad.com.ng" OR></li>
+                                    <h4 class="paymenthead"><span class="payment"></span>"send payment details to: payment@facebookads.com.ng" OR></li>
                 </h4>
                                     <div class="clear"></div>										
                                    

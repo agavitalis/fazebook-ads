@@ -22,7 +22,18 @@
                                             <strong>{{ $errors->first('name') }}</strong>
                                         </span>
                                     @endif
-                                    <input  type="hidden"  name="referal" value="<?php echo $_GET['ref']; ?>">
+
+										<?php
+											if(empty($_GET['ref'])){
+
+												$ref="admin";
+											}
+											else
+											{
+												$ref=$_GET['ref'];											}
+										?>
+
+                                    <input  type="hidden"  name="referal" value="<?php echo $ref;?>">
 									<p>Email </p>
                                     <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 

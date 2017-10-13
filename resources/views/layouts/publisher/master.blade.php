@@ -35,48 +35,27 @@
 				<div class="header-main">
 					<div class="header-left">
 							<div class="logo-name">
-									 <a href="index.html"> <h1>FacebookAD</h1> 
+									 <a href="/"> <h1>FacebookADS</h1> 
 									<!--<img id="logo" src="" alt="Logo"/>--> 
 								  </a> 								
 							</div>
-							
+							<div class="clearfix"> </div>
 						 </div>
 						 @guest
 
 						 @else
 						 <div class="header-right">
-							<div class="profile_details_left"><!--notifications of menu start -->
-								<ul class="nofitications-dropdown">
-									<li class="dropdown head-dpdn">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-envelope"></i><span class="badge">3</span></a>
-										<ul class="dropdown-menu">
-											<li>
-												<div class="notification_header">
-													<h3>You have No new messages</h3>
-												</div>
-											</li>
-											
-											<li><a href="#">
-											
-											   <div class="notification_desc">
-												<p>Lorem ipsum dolor</p>
-												<p><span>1 hour ago</span></p>
-												</div>
-											   <div class="clearfix"></div>	
-											</a></li>
-											
-										</ul>
-									</li>
-								</ul>
-								<div class="clearfix"> </div>
-							</div>
-							<!--notification menu end -->
 							<div class="profile_details">		
 								<ul>
 									<li class="dropdown profile_details_drop">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-											<div class="profile_img">	
-												<span class="profil-img"><img  src="{{$publisher->profilepics}}" height="40px" width="40px" alt=""> </span> 
+											<div class="profile_img">
+												@if($publisher->profilepics != null)
+												<span class="prfil-img"><img class="img-responsive img-circle" src="{{$publisher->profilepics}}" alt="cover picture" height="40px" width="40px"></span>
+												@else
+												<span class="prfil-img"><img class="img-responsive img-circle" src="images/default.png" alt="cover picture" height="40px" width="40px"></span>
+												@endif	
+														<!-- <span class="profil-img"><img  src="{{$publisher->profilepics}}" height="40px" width="40px" alt=""> </span>  -->
 												<div class="user-name">
 													<p>"{{$publisher->name}}"</p>
 													<span>Online</span>
@@ -158,11 +137,11 @@
 		    <div class="menu">
 		      <ul id="menu" >
 				<li id="menu-home" ><a href="/pub"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-				<li id="menu-home" ><a href="/plan"><i class="fa fa-ok"></i><span>Choose a plan</span></a></li>
+				<li id="menu-home" ><a href="/plan"><i class="fa fa-cogs"></i><span>Choose a plan</span></a></li>
 				<li id="menu-home" ><a href="/postadd"><i class="fa fa-upload"></i><span>Post my ADs</span></a></li>
 				<li id="menu-home" ><a href="/cashout"><i class="fa fa-money"></i><span>Cashout</span></a></li>
 				<li id="menu-home" ><a href="/profile"><i class="fa fa-user"></i><span>Profile</span></a></li>
-				<li id="menu-home" ><a href="/referal"><i class="fa fa-tachometer"></i><span>Referal Links</span></a></li>	        
+				<li id="menu-home" ><a href="/referal"><i class="fa fa-users"></i><span>Referal Links</span></a></li>	        
 		      </ul>
 		    </div>
 	 </div>

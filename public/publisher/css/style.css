@@ -1073,6 +1073,9 @@ canvas#radar {
     height:350px !important;
 }
 /*--maloum grid start here--*/
+.profil-img img{
+    display:inline;
+}
 .malorum-top {
     background: url(../images/1.jpg)no-repeat;
     background-size: cover;
@@ -1088,7 +1091,7 @@ span.malorum-pro img{
     height: 95px;
     display: inline-block;
     position: absolute;
-    top: -60px;
+    top: -75px;
     left: 265px;
     border: 2px solid #ccc;
     border-radius: 63px;
@@ -3101,7 +3104,7 @@ canvas#bar {
 .malorm-bottom p {
     width: 90%;
 }
-span.malorum-pro {
+span.malorum-pro img{
     left: 225px;
 }
 canvas#line {
@@ -3175,7 +3178,7 @@ canvas#bar {
 canvas#line {
     width: 410px !important;
 }
-span.malorum-pro {
+span.malorum-pro img{
     left: 190px;
 }
 canvas#radar {
@@ -3233,7 +3236,7 @@ li.dropdown.head-dpdn a.dropdown-toggle {
 }
 .profile_details {
     float: right;
-    width: 50%;
+    width: 86%;
 }
 .fixed {
     position: fixed;
@@ -3281,7 +3284,7 @@ canvas#bar {
 .malorum-top {
     min-height: 176px;
 }
-span.malorum-pro {
+span.malorum-pro img{
     left: 145px;
 }
 .left-content {
@@ -3715,7 +3718,7 @@ canvas#line {
 .map-2 {
     padding: 0px;
 }
-span.malorum-pro {
+span.malorum-pro img{
     left: 115px;
 }
 .chit-chat-layer1-rit {
@@ -3886,7 +3889,7 @@ canvas#bar {
     float: none;
     width: 100%;
 }
-span.malorum-pro {
+span.malorum-pro img{
     left: 220px;
 }
 .chart-layer2-right {
@@ -4064,7 +4067,7 @@ canvas#bar {
 canvas#bar {
     width: 350px !important;
 }
-span.malorum-pro {
+span.malorum-pro img{
     left: 150px;
 }
 .chart-layer-2 {
@@ -4220,7 +4223,7 @@ canvas#line {
 canvas#bar {
     width: 295px !important;
 }
-span.malorum-pro {
+span.malorum-pro img{
     left: 120px;
 }
 .popular-bran-left p {
@@ -4342,7 +4345,7 @@ li.dropdown.head-dpdn a.dropdown-toggle {
     width: 40%;
 }
 .profile_details {
-    width: 60%;
+    width: 85%;
 }
 .fixed {
     width: 84%;
@@ -4376,7 +4379,7 @@ canvas#bar {
 .malorum-top {
     min-height: 100px;
 }
-span.malorum-pro {
+span.malorum-pro img{
     width: 60px;
     height: 60px;
     top: -35px;

@@ -8,8 +8,7 @@ use App\Models\Advertizer;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use Cookie;
-
+use Auth;
 class RegisterController extends Controller
 {
     /*
@@ -30,7 +29,20 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    //protected $redirectTo = '/home';
+    public function redirectTo()
+    {
+
+       if (Auth::user()->usertype =='pp')
+       {
+           return route('publisherhome');
+       }
+       else
+       {
+           return route('advertizerhome');
+       }
+
+    }
 
     /**
      * Create a new controller instance.

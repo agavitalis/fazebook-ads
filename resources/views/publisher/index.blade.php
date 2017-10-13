@@ -66,7 +66,11 @@
 					<div class="malorum-top">				
 					</div>
 					<div class="malorm-bottom">
-						<span class="malorum-pro"><img src="{{$publisher->profilepics}}" height="90px"width="90px" alt="Profile Pics"> </span>
+					@if($publisher->profilepics != null)
+					<span class="malorum-pro"><img class="user-image img-responsive img-circle" src="{{$publisher->profilepics}}" alt="cover picture"></span>
+					@else
+					<span class="malorum-pro"><img class="user-image img-responsive img-circle" src="images/default.png" alt="cover picture"></span>
+					@endif
 						<h4>Hello</h4>
 						<h2>{{$publisher->name}}</h2>
 						<p>Welcome to FacebookAd, A good place to be.</p>

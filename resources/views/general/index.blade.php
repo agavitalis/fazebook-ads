@@ -51,7 +51,7 @@
 			<h4 class="modal-title">Mutually Beneficial</h4>
 		  </div>
 		  <div class="modal-body">
-			<p>Facebook has over a third of the world population and there couldn’t be a better place to find your customers. You can be sure that every product, service, offer, advert, promo and discount get to the intended people. We provide analytic dashboard to track the shares on your listings. Our publishers are verified Facebook users and have a lot of reach and friends. Your posts are shared and kept on their timelines.
+			<p>Social media has over a third of the world population and there couldn’t be a better place to find your customers. You can be sure that every product, service, offer, advert, promo and discount get to the intended people. We provide analytic dashboard to track the shares on your listings. Our publishers are verified Facebook users and have a lot of reach and friends. Your posts are shared and kept on their timelines.
 Our emoluments are enticing for our publishers. They are rewarded for each posts shared and retained on their timeline. This ensures that both parties benefit from the programme.
 </p>
 		  </div>

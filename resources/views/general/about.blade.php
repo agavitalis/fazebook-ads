@@ -12,7 +12,7 @@
 				<div class="ab-top">
 					<h3>100%</h3>
 					<h5>Customer Support</h5>
-					<p>Lorem ipsum dolor sit amet, conse etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magn aliquam erat volutpat massa dolore.</p>
+					<p>We are very much concerned with the growth of our advertisers and publishers. For advertisers, we provide a platform to reach organic traffic and gain as many customers as possible. </p>
 					<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
 
 				</div>
@@ -48,7 +48,9 @@
 			<h4 class="modal-title">Pellentesque vehicula</h4>
 		  </div>
 		  <div class="modal-body">
-			<p>In varius sem id aliquet rutrum. Pellentesque ut neque ligula. Fusce dapibus volutpat magna, ac feugiat dolor bibendum et. Integer dignissim gravida nunc, eget hendrerit enim. Quisque dapibus mollis finibus. Curabitur nulla enim, aliquet ac ultricies luctus, lacinia ut felis. Etiam aliquam massa nec lorem pulvinar porttitor. Maecenas in rutrum purus, eget consectetur arcu. Sed id pretium ligula, id hendrerit nunc. Nam ut tincidunt erat, sit amet accumsan risus..</p>
+		  <p>Socal media has over a third of the world population and there couldn’t be a better place to find your customers. You can be sure that every product, service, offer, advert, promo and discount get to the intended people. We provide analytic dashboard to track the shares on your listings. Our publishers are verified Facebook users and have a lot of reach and friends. Your posts are shared and kept on their timelines.
+		  Our emoluments are enticing for our publishers. They are rewarded for each posts shared and retained on their timeline. This ensures that both parties benefit from the programme.
+		  </p>
 		  </div>
 		</div>
 	</div>

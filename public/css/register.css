@@ -85,6 +85,9 @@ h1 {
     margin:1.8em 0 .5em;
     letter-spacing: 1px;
 }
+.radio label{
+	color:#6156BF;
+}
 /*-- checkbox --*/
 .anim {
     font-size: 0.9em;
@@ -371,7 +374,7 @@ input.checkbox:checked:after {
     width: 93%; 
 }
 .login-form h1 {
-    font-size: 2em;
+    font-size: 1.7em;
 } 
 }
 @media(max-width:414px){
