@@ -20,12 +20,12 @@
 			<div class="col-md-8 about-right">
 				
 				<div class="col-md-6 ab-lft">
-					<h4>ADVERTISERS</h4>
-					<p>Social Media provides an unprecedented outreach for businesses. With Facebook alone boasting over two billion active monthly users, there is no better platform to meet potential customers and clients. Join the numerous advertisers already with us and watch your online presence soar, with the concomitant growth and traction.</p>
-				</div>
+					<h4>Connecting Brands to Consumers</h4>
+					<p>Facebookads.com.ng is an online rewards platform that pays members cash for their online and mobile activities. We connect consumers and advertisers in a way that benefits both. We reward members for their everyday activities such as reading posts and sharing on their timelines, signing up for offers. We leverage this loyalty platform to create effective customer acquisition and brand engagement campaigns for advertisers and market research partners.</p>	</div>
 				<div class="col-md-6 ab-lft">
-					<h4>PUBLISHERS</h4>
-					<p>On average, we all use Facebook, with many spending over five hours every day chatting away. How about we pay you just for a twenty-minute work online? Sounds cool, right? All you need to do is promote our clients’ companies. Simply share company ads on your timeline and make money on the go. It doesn’t get any simpler than this.</p>
+					<h4>Flexible and Performance-Based</h4>
+					<p>Our advertisers and market research partners pay only for the results we deliver, and our members receive cash, not points, for their activities. This flexible, profitable model has resulted in thousands paid to members since incorporation. Advertisers and market research partners receive an efficient way to reach motivated and targeted online and mobile audiences.
+					Contact us for more details about how we can engage our members with your brand.
 				</div>
 				<div class="clearfix"></div>
 				<div class="abt-bottom">

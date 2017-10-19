@@ -50,7 +50,7 @@
 						<p>Your Bonuses due to referals</p>
 					</div>
 					<div class="col-md-4 market-update-right">
-						<i class="fa fa-envelope-o"> </i>
+						<i class="fa fa-tasks"> </i>
 					</div>
 				  <div class="clearfix"> </div>
 				</div>

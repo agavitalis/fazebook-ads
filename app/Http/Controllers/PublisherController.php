@@ -43,28 +43,26 @@ class PublisherController extends Controller
         
         elseif($request->isMethod('POST'))
         {
-            $this->validate($request,[
-                'advert' =>'bail|required|mimes:jpeg,png',]);
-        
+
                 $file = $request->advert;
-                $link = $request->link;
-                
-                $name =\Ramsey\Uuid\Uuid::uuid4();
-                $name = $name->toString();
+                // $link = $request->link;
            
                 if($file->getSize()<2000000){
                                    
-                    $filelink =$name.'.'.$file->getClientOriginalExtension();
-                    
+                 
                    
                     if(!DB::table('evidence')->where('publisher_id',Auth::user()->email)->first()){
+
+                            //I saved this guy with his original name
+                        $name= $file->getClientOriginalName();
+                        $file->storeAs('public',$name);
+                        $imageurl= Storage::url($name);
                          
-                      $file->move( base_path() . '/public/storage/', $filelink );
+                     
                       $evidence = new evidence();
 
                       $evidence->publisher_id = Auth::user()->email;
-                      $evidence->address = $filelink;
-                      $evidence->link = $link;
+                      $evidence->address = $imageurl;
 
                       $evidence->save();
                                         
@@ -187,7 +185,7 @@ class PublisherController extends Controller
 
             }
 }
-
+// ln -s /home/solidcas/facebookads/storage/app/public/ /home/solidcas/public_html/facebookads.com.ng
 
 
 }

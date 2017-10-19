@@ -22,7 +22,7 @@
             <div class="product-items">
                 <div class="project-eff">
                         <div id="nivo-lightbox-demo"> <p> </p></div>     
-                            <img class="img-responsive" src="/storage/{{$advert->address}}" alt="">
+                            <img class="img-responsive" src="{{$advert->address}}" alt="">
                 </div>
                 <div class="produ-cost">
                 <div class="row" >

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Advert;
+use Illuminate\Support\Facades\Storage;
 use DB;
 use Auth;
 
@@ -12,6 +13,7 @@ class AdvertController extends Controller
 public function __construct() {
 
         $this->middleware('auth');
+        $this->middleware('adminguard');
 }
      
     
@@ -36,6 +38,7 @@ public function addads()
         $file = $request->advert;
         $description = $request->description;
         $website=$request->website;
+        $title=$request->title;
  	    $name =\Ramsey\Uuid\Uuid::uuid4();
         $name = $name->toString();
    
@@ -45,13 +48,21 @@ public function addads()
         
                $fileName =$name.'.'.$file->getClientOriginalExtension();
 
-            if( $file->move( base_path() . '/public/storage/', $fileName )){
+              // $name= $file->getClientOriginalName();
+               
+              
+
+            if( $file->storeAs('public',$fileName)){
+
+                $imageurl= Storage::url($fileName);
+                
                         
                 Advert::create([
                 
                 'description' => $description,
                 'website'=>$website,
-                'address'=>$fileName ]);
+                'title'=>$title,
+                'address'=>$imageurl ]);
                                 
                 $params = [
                     'title' => 'Add an Ad',
@@ -139,7 +150,16 @@ public function addads()
 
         $id = $request->advertid;
 
+        $delete=advert::findOrFail($id);
+
+    
+        $emeka=substr($delete->address,9);
+        //dd($emeka);
+        Storage::delete($emeka);
+        Storage::delete($delete->address);
         $adverts = DB::insert('Delete from adverts where id = ?',[$id]);
+
+
 
         $params = [
                     'title' => 'Published Ads',

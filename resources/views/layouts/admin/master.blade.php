@@ -27,7 +27,7 @@
                 <div class="header-main">
                     <div class="header-left">
                             <div class="logo-name">
-                                     <a href="#"> <h1>FaceBookAD</h1> 
+                                     <a href="#"> <h1>FaceBookADs</h1> 
                                     <!--<img id="logo" src="" alt="Logo"/>--> 
                                   </a>                              
                             </div>
@@ -61,10 +61,10 @@
                                             
                                             <li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li> 
                                             <li> <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-sign-out"></i>Logout</a>
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                    {{ csrf_field() }}
+                                                </form>
+                                            </li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -120,7 +120,7 @@
 
 <!--copy rights start here-->
 <div class="copyrights">
-     <p>© 2017 FaceBookAds. All Rights Reserved | Design by  <a href="#" target="_blank">Chyke</a> </p>
+     <p>© 2017 FaceBookAds. All Rights Reserved | Design by  <a href="#" target="_blank">Facebookads</a> </p>
 </div>  
 <!--COPY rights end here-->
 </div>
@@ -153,7 +153,7 @@
              
                  <li><a href="#"><i class="fa fa-shopping-cart"></i><span>Advertisers</span><span class="fa fa-angle-right" style="float: right"></span></a>
                     <ul id="menu-academico-sub" >
-                        <li id="menu-academico-avaliacoes" ><a href="#">Product</a></li>
+                        <li id="menu-academico-avaliacoes" ><a href="/viewadvertizer">Manage Advertizers</a></li>
                         <li id="menu-academico-boletim" ><a href="#">Price</a></li>
                      </ul>
                  </li>

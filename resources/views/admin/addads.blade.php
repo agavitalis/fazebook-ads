@@ -28,7 +28,10 @@
 							
                             <form class="com-mail"  method="POST" action="{{ route('addads') }}" name="adverts" enctype="multipart/form-data"> 
                               {{ csrf_field() }}
-              
+
+                              <input name="title" type="text"  value="Advert Title :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Advert Title';}">
+								
+
 								<input name="website" type="text"  value="Advert Website :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Advert Website';}">
 								
 								<textarea name="description" rows="6"  value="Message :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">A full discription of the advert </textarea>

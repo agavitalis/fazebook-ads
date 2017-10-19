@@ -16,10 +16,16 @@ public function readmore($id=null){
         // $adverts = DB::select('select * from adverts');
         if($id!= null)
         {
-            $publisher=DB::table('publishers')->where('email',Auth::user()->email)->first();
+           try{
+                $publisher=DB::table('publishers')->where('email',Auth::user()->email)->first();
+          
+           }
+           finally{
+
             $advert=DB::table('adverts')->where('id',$id)->first();
-           // dd($advert);
             return view('general.readmore',compact('advert','publisher'));
+           }
+            
         } 
 }
 }

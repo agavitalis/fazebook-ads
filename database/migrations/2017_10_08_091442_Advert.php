@@ -15,6 +15,7 @@ class Advert extends Migration
     {
         Schema::create('adverts', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
             $table->string('description')->nullable();
             $table->string('address');
             $table->string('website')->nullable();

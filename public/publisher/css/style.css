@@ -906,7 +906,7 @@ ul.dropdown-menu.drp-mnu li {
     -o-border-radius:49px;
     line-height: 1.7em;
 }
-.market-update-right i.fa.fa-envelope-o {
+.market-update-right i.fa.fa-tasks {
      font-size:3em;
     color:#337AB7;
     width: 80px;
@@ -3704,10 +3704,7 @@ canvas#line {
 .compose-right {
     padding: 0px;
 }
-.product-grid {
-    float: left;
-    width: 50%;
-}
+
 .project-eff:hover span.rollover1 {
     width: 308px;
     height: 220px;

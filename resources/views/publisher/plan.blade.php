@@ -88,25 +88,18 @@
                         <div class="pop_up">
                             <div class="payment-online-form-left">
                                 <form>
-                                    <h4><span class="shoppong-pay-1"> </span>Pay at</h4>
-                                    <ul>
-                                        <li><input class="text-box-dark"  disabled="true" type="text" value="Bank: Fidlity Bank" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"></li>
-                                        <li><input class="text-box-dark" disabled="true" type="text" value="Account No: 000000000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
-                                    </ul>
-                                    <ul>
-                                        <li><input class="text-box-dark"  disabled="true" type="text" value="Account Name: BOOKADS INTL" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-                                        <li><input class="text-box-dark"  disabled="true" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-                
-                                    </ul>
-                                    
+									<h4><span class="shoppong-pay-1"> </span>Pay at</h4>
+									<p>BANK NAME: Fidelity Bank</p>
+									<p>ACCOUNT NAME: BOOKADS MEDIA</p>
+                                    <p>ACCOUNT NUMBER: 6060261213</p>
                                     <div class="clear"></div>
                                     <h4 class="paymenthead"><span class="payment"></span>"send payment details to: payment@facebookads.com.ng" OR></li>
-                </h4>
+              					  </h4>
                                     <div class="clear"></div>										
                                    
                                     <ul class="payment-sendbtns">
                                       
-                                        <li><a href="#" class="order">Pay with Stack Pay</a></li>
+                                        <li><a href="#" class="order">Pay with Vougue Pay</a></li>
                                     </ul>
                                     <div class="clear"></div>
                                 </form>

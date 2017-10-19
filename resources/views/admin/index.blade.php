@@ -21,8 +21,8 @@
         <div class="col-md-3 product-grid">
             <div class="product-items">
                 <div class="project-eff">
-                        <div id="nivo-lightbox-demo"> <p><a href="/storage/{{$advert->address}}" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a> </p></div>     
-                            <img class="img-responsive" src="/storage/{{$advert->address}}" alt="">
+                        <div id="nivo-lightbox-demo"> <p><a href="{{$advert->address}}" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a> </p></div>     
+                            <img class="img-responsive" src="{{$advert->address}}" alt="">
                 </div>
                 <div class="produ-cost">
                 <div class="row" >

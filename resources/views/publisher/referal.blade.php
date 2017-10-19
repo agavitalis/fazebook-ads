@@ -44,7 +44,7 @@
                         </div>
 
                         <div class="">
-                            Referal Link:https://www.facebookad.com?ref={{Auth::user()->email}};
+                            Referal Link:https://www.facebookads.com.ng?ref={{Auth::user()->email}};
                         </div>
          </div>
   </div>

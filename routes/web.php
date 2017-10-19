@@ -59,6 +59,10 @@ Route::get('/admin', 'AdminController@index')->name('adminindex');
 Route::match(['post','get'],'/transferpayment/{id?}', 'AdminController@transferpayment')->name('transferpayment');
 
 
+//the advertizer is taken  care off here
+Route::match(['post','get'],'/viewadvertizer', 'AdminController@viewadvertizer')->name('viewadvertizer');
+
+
 
 
 
@@ -87,13 +91,17 @@ Route::get('/readmore/{id?}', 'GeneralController@readmore')->name('readmore');
 
 
 
-
-
-
-
-
 //Confirmation Controllers for admin
 Route::get('/confirmads', ['as' => 'confirmads','uses' => 'EvidenceController@confirmads']);
 Route::get('/confirmads/{ad_id}', ['as' => 'confirm_user','uses' => 'EvidenceController@confirm_user']);
 Route::post('/confirmads/{ad_id}', ['as' => 'confirmad_user2','uses' => 'EvidenceController@confirmad_user2']);
 Route::post('/credit', ['as' => 'credit_user','uses' => 'EvidenceController@credit_user']);
+
+
+
+
+
+//advertizers controllers
+Route::get('/advert', 'AdvertizerController@index')->name('advertizerhome');
+
+Route::match(['post','get'],'/regadd/{id?}', 'AdvertizerController@postadvert')->name('postadvert');

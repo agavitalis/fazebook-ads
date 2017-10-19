@@ -49,13 +49,7 @@
 								<ul>
 									<li class="dropdown profile_details_drop">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-											<div class="profile_img">
-												@if($publisher->profilepics != null)
-												<span class="prfil-img"><img class="img-responsive img-circle" src="{{$publisher->profilepics}}" alt="cover picture" height="40px" width="40px"></span>
-												@else
-												<span class="prfil-img"><img class="img-responsive img-circle" src="images/default.png" alt="cover picture" height="40px" width="40px"></span>
-												@endif	
-														<!-- <span class="profil-img"><img  src="{{$publisher->profilepics}}" height="40px" width="40px" alt=""> </span>  -->
+											<div class="profile_img">	
 												<div class="user-name">
 													<p>"{{$publisher->name}}"</p>
 													<span>Online</span>
@@ -140,13 +134,9 @@
 			  </a> </div>		  
 		    <div class="menu">
 		      <ul id="menu" >
-				<li id="menu-home" ><a href="/pub"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-				<li id="menu-home" ><a href="/plan"><i class="fa fa-cogs"></i><span>Choose a plan</span></a></li>
-				<li id="menu-home" ><a href="/postadd"><i class="fa fa-upload"></i><span>Post my ADs</span></a></li>
-				<li id="menu-home" ><a href="/cashout"><i class="fa fa-money"></i><span>Cashout</span></a></li>
-				<li id="menu-home" ><a href="/profile"><i class="fa fa-user"></i><span>Profile</span></a></li>
-				<li id="menu-home" ><a href="/referal"><i class="fa fa-users"></i><span>Referal Links</span></a></li>	        
-		      </ul>
+				<li id="menu-home" ><a href="/advert"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+				<li id="menu-home" ><a href="/regadd"><i class="fa fa-upload"></i><span>Register an advert</span></a></li>
+			    </ul>
 		    </div>
 	 </div>
 	<div class="clearfix"> </div>

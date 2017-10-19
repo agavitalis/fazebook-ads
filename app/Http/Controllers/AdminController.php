@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 use Auth;
 use App\Models\Publisher;
+use App\Models\Advertizer;
 
 
 class AdminController extends Controller
@@ -13,6 +14,7 @@ class AdminController extends Controller
     public function __construct() {
         
         $this->middleware('auth');
+        $this->middleware('adminguard');
     }
            
     public function index()
@@ -97,4 +99,37 @@ class AdminController extends Controller
             
         }
     }
+
+
+    //i took care of the advertizer here
+    public function viewadvertizer(Request $request)
+    {
+        if($request->isMethod('GET'))
+        {
+            $advertizer = DB::select('select * from advertizers where `url` != "" ' );
+            return view('admin.advertizer',compact('advertizer'));
+
+        }
+        elseif($request->isMethod('POST')){
+
+
+                $id = $request->advert;
+        
+                $update =advertizer::findOrFail($id);
+        
+                $update->url="";
+                $update->update();
+        
+                $params = [
+                            'title' => 'List of advertizers',
+                            'status' => 'Advert deleted successfully'
+                    
+                             ];
+        
+                 return redirect('/viewadvertizer')->with($params);
+        }
+
+    }
+
+
 }
