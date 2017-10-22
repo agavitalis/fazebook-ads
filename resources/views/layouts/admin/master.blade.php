@@ -150,6 +150,7 @@
                          </ul>
                  </li>
                  <li id="menu-home" ><a href="/transferpayment"><i class="fa fa-money"></i><span>Activate Pubs</span></a></li>
+                 <li id="menu-home" ><a href="/seecashouts"><i class="fa fa-money"></i><span>Cashouts</span></a></li>
              
                  <li><a href="#"><i class="fa fa-shopping-cart"></i><span>Advertisers</span><span class="fa fa-angle-right" style="float: right"></span></a>
                     <ul id="menu-academico-sub" >

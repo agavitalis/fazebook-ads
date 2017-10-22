@@ -58,6 +58,10 @@ Route::match(['post','get'],'/cashout/{id?}', 'PublisherController@cashout')->na
 Route::get('/admin', 'AdminController@index')->name('adminindex');
 Route::match(['post','get'],'/transferpayment/{id?}', 'AdminController@transferpayment')->name('transferpayment');
 
+//i took care of the cashouts here
+Route::match(['post','get'],'/seecashouts/{id?}', 'AdminController@seecashouts')->name('seecashouts');
+
+
 
 //the advertizer is taken  care off here
 Route::match(['post','get'],'/viewadvertizer', 'AdminController@viewadvertizer')->name('viewadvertizer');

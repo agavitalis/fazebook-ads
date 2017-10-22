@@ -7,13 +7,14 @@ use DB;
 use Auth;
 use App\Models\Publisher;
 use App\Models\Advertizer;
+use App\Models\Cashout;
 
 
 class AdminController extends Controller
 {
     public function __construct() {
         
-        $this->middleware('auth');
+        $this->middleware('auth'); 
         $this->middleware('adminguard');
     }
            
@@ -99,6 +100,70 @@ class AdminController extends Controller
             
         }
     }
+
+
+
+public function seecashouts(Request $request)
+    {
+        if($request->isMethod('GET'))
+        {
+                $publishers = DB::table('cashouts')->get();
+                return view('admin.cashout',compact('publishers'));
+        }
+        
+        elseif($request->isMethod('POST'))
+        {
+            if($request->task == 'confirm')
+            {
+                $id = $request->id;
+                
+                     $update=cashout::findOrFail($id);
+                         $update->paid="1";
+                         $update->update();
+                
+                        $params = [
+                                    'title' => 'These Publishers requested for cashout',
+                                    'status' => 'Status successfully updated'
+                            
+                                     ];
+                
+                         return back()->with($params);
+            }
+            elseif($request->task == 'delete'){
+
+               DB::insert('Delete from cashouts where id = ?',[$request->id]);
+                
+                        $params = [
+                                    'title' => 'These Publishers requested for cashout',
+                                    'status' => 'Cashout deleted successfully'
+                            
+                        ];
+
+                        return back()->with($params);
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     //i took care of the advertizer here
